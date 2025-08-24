@@ -1,0 +1,49 @@
+{
+  "name": "Purple Sunset",
+  "description": "ClearVision V7 inspired theme (Purple Sunset) ported to Discord Mobile.",
+  "version": "1.0.0",
+  "authors": [
+    { "name": "ClearVision", "id": "clearvision" }
+  ],
+  "spec": 2,
+  "semanticColors": {
+    "BACKGROUND_PRIMARY": "#000000",
+    "BACKGROUND_SECONDARY": "rgba(0,0,0,0.5)",
+    "BACKGROUND_SECONDARY_ALT": "rgba(0,0,0,0.4)",
+    "BACKGROUND_TERTIARY": "rgba(0,0,0,0.3)",
+    "BG_BASE_PRIMARY": "#000000",
+    "BG_BASE_SECONDARY": "#0d0d0d",
+    "BG_BASE_TERTIARY": "#1a1a1a",
+    "HEADER_PRIMARY": "#cbadff",
+    "HEADER_SECONDARY": "#d359ff",
+    "TEXT_NORMAL": "#cbadff",
+    "TEXT_MUTED": "#d359ff",
+    "TEXT_LINK": "#8200c8",
+    "TEXT_POSITIVE": "#001e98",
+    "TEXT_DANGER": "#7f007b",
+    "MENTION_BACKGROUND": "rgba(114,0,0,0.1)",
+    "MENTION_FOREGROUND": "#cbadff",
+    "INTERACTIVE_ACTIVE": "#8200c8",
+    "INTERACTIVE_HOVER": "#3d007a",
+    "STATUS_POSITIVE": "#43b581",
+    "STATUS_WARNING": "#faa61a",
+    "STATUS_DANGER": "#982929",
+    "STATUS_STREAMING": "#593695",
+    "STATUS_OFFLINE": "#808080"
+  },
+  "rawColors": {
+    "BRAND_500": "#8200c8",
+    "BRAND_560": "#3d007a",
+    "PRIMARY_600": "#000000",
+    "PRIMARY_630": "#1a1a1a",
+    "PRIMARY_660": "#0d0d0d",
+    "PRIMARY_700": "rgba(0,0,0,0.4)",
+    "GREEN_500": "#43b581",
+    "YELLOW_500": "#faa61a",
+    "RED_500": "#982929",
+    "PURPLE_500": "#8200c8",
+    "PINK_500": "#d359ff",
+    "WHITE_500": "#cbadff",
+    "GREY_500": "#808080"
+  }
+}
