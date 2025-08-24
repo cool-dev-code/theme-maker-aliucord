@@ -1,14 +1,14 @@
 {
   "name": "Purple Sunset (Mobile)",
-  "description": "ClearVision V7 'Purple Sunset' adapted to Discord Mobile (spec 2), modeled after Midnight Vencord JSON schema.",
-  "version": "1",
+  "description": "ClearVision 'Purple Sunset' for Kettu + Themes+. Includes wallpaper + full chat theming.",
+  "version": "1.1",
   "authors": [
     {
       "name": "ClearVision",
       "id": "clearvision"
     },
     {
-      "name": "Ported by ChatGPT",
+      "name": "Ported by Fizz",
       "id": "000000000000000000"
     }
   ],
@@ -360,13 +360,15 @@
       "toast_image_saved": "#feffff"
     },
     "wallpaper": {
-      "url": "https://github.com/MasterModz1243/themesforvencord/blob/main/wmremove-transformed.png?raw=true",
+      "url": "https://raw.githubusercontent.com/MasterModz1243/themesforvencord/refs/heads/main/wmremove-transformed.png",
       "opacity": 0.25,
       "blur": 8,
       "scale": "cover",
       "align": "center"
-    }
+    },
+    "pillBG": "rgba(114,0,0,0.1)",
+    "topNavBarGradient": false
   },
   "spec": 2,
-  "background_url": "https://github.com/MasterModz1243/themesforvencord/blob/main/wmremove-transformed.png?raw=true"
+  "background_url": "https://raw.githubusercontent.com/MasterModz1243/themesforvencord/refs/heads/main/wmremove-transformed.png"
 }
