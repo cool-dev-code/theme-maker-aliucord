@@ -8,8 +8,8 @@
       "id": "clearvision"
     },
     {
-      "name": "Ported by Fizz",
-      "id": "629700611994157057"
+      "name": "Ported by ChatGPT",
+      "id": "000000000000000000"
     }
   ],
   "semanticColors": {
@@ -17,7 +17,7 @@
       "#4a235a"
     ],
     "CHAT_BACKGROUND": [
-      "#000000"
+      "#00000080"
     ],
     "BACKGROUND_ACCENT": [
       "#8200c8"
@@ -56,7 +56,7 @@
       "#d359ff"
     ],
     "BACKGROUND_MESSAGE_HOVER": [
-      "hsla(0, 0%, 100%, 0.03)"
+      "#FFFFFF0D"
     ],
     "BACKGROUND_NESTED_FLOATING": [
       "rgba(0,0,0,0.4)"
@@ -68,16 +68,16 @@
       "rgba(0,0,0,0.5)"
     ],
     "BACKGROUND_MODIFIER_ACCENT": [
-      "hsla(0, 0%, 100%, 0.06)"
+      "#FFFFFF0F"
     ],
     "BACKGROUND_MODIFIER_ACTIVE": [
-      "hsla(0, 0%, 100%, 0.08)"
+      "#FFFFFF14"
     ],
     "BACKGROUND_MODIFIER_HOVER": [
-      "hsla(0, 0%, 100%, 0.06)"
+      "#FFFFFF0F"
     ],
     "BACKGROUND_MODIFIER_SELECTED": [
-      "hsla(0, 0%, 100%, 0.08)"
+      "#FFFFFF1A"
     ],
     "BACKGROUND_PRIMARY": [
       "#000000"
@@ -358,7 +358,15 @@
       "toast_copy_link": "#d359ff",
       "toast_copy_message": "#feffff",
       "toast_image_saved": "#feffff"
+    },
+    "wallpaper": {
+      "url": "https://github.com/MasterModz1243/themesforvencord/blob/main/wmremove-transformed.png?raw=true",
+      "opacity": 0.25,
+      "blur": 8,
+      "scale": "cover",
+      "align": "center"
     }
   },
-  "spec": 2
+  "spec": 2,
+  "background_url": "https://github.com/MasterModz1243/themesforvencord/blob/main/wmremove-transformed.png?raw=true"
 }
