@@ -1,11 +1,11 @@
 {
-  "name": "Purple Vision (Alpha)",
-  "description": "Alpha-style JSON like Midnight: transparent chat + semi-dark sidebars, Purple Sunset palette, Themes+ wallpaper.",
-  "version": "1.4-alpha",
+  "name": "Purple Vision (Alpha Strict)",
+  "description": "Follows Midnight alpha JSON format (arrays-of-one semanticColors). Transparent chat + Themes+ wallpaper.",
+  "version": "1.5-alpha-strict",
   "authors": [
     {
-      "name": "ClearVision",
-      "id": "clearvision"
+      "name": "kmmiio99o.dev",
+      "id": "879393496627306587"
     },
     {
       "name": "Purple Vision Port",
@@ -13,63 +13,177 @@
     }
   ],
   "semanticColors": {
-    "CHAT_BACKGROUND": "transparent",
-    "BACKGROUND_PRIMARY": "transparent",
-    "BACKGROUND_SECONDARY": "#0000008c",
-    "BACKGROUND_SECONDARY_ALT": "#00000075",
-    "BACKGROUND_TERTIARY": "#0000004d",
-    "BACKGROUND_FLOATING": "#00000080",
-    "BACKGROUND_NESTED_FLOATING": "#0000004d",
-    "BACKGROUND_MOBILE_PRIMARY": "transparent",
-    "BACKGROUND_MOBILE_SECONDARY": "#0000008c",
-    "BG_BASE_PRIMARY": "transparent",
-    "BG_BASE_SECONDARY": "#0000008c",
-    "BG_BASE_TERTIARY": "#00000075",
-    "HOME_BACKGROUND": "#00000059",
-    "CHANNELTEXTAREA_BACKGROUND": "#0000008c",
-    "REDESIGN_CHAT_INPUT_BACKGROUND": "#0000008c",
-    "BACKGROUND_MESSAGE_HOVER": "#FFFFFF12",
-    "BACKGROUND_MODIFIER_HOVER": "#FFFFFF0F",
-    "BACKGROUND_MODIFIER_ACTIVE": "#FFFFFF14",
-    "BACKGROUND_MODIFIER_SELECTED": "#FFFFFF1A",
-    "BACKGROUND_MODIFIER_ACCENT": "#FFFFFF12",
-    "BACKGROUND_MENTIONED": "rgba(114,0,0,0.1)",
-    "BACKGROUND_MENTIONED_HOVER": "rgba(170,0,0,0.1)",
-    "MENTION_BACKGROUND": "rgba(114,0,0,0.1)",
-    "MENTION_FOREGROUND": "#8200c8",
-    "HEADER_PRIMARY": "#cbadff",
-    "HEADER_SECONDARY": "#d359ff",
-    "TEXT_NORMAL": "#cbadff",
-    "TEXT_SECONDARY": "#d359ff",
-    "TEXT_MUTED": "#d359ff",
-    "TEXT_LINK": "#8200c8",
-    "TEXT_POSITIVE": "#43b581",
-    "TEXT_WARNING": "#faa61a",
-    "TEXT_DANGER": "#7f007b",
-    "CHANNELS_DEFAULT": "#d359ff",
-    "CHANNEL_ICON": "#d359ff4d",
-    "CHANNEL_TEXT_AREA_PLACEHOLDER": "#d359ff",
-    "INTERACTIVE_ACTIVE": "#8200c8",
-    "INTERACTIVE_HOVER": "#3d007a",
-    "INTERACTIVE_NORMAL": "#cbadff",
-    "INTERACTIVE_MUTED": "#d359ff",
-    "SCROLLBAR_AUTO_THUMB": "#2b2b2b",
-    "SCROLLBAR_AUTO_TRACK": "transparent",
-    "SCROLLBAR_THIN_THUMB": "#2b2b2b",
-    "SCROLLBAR_THIN_TRACK": "transparent",
-    "STATUS_POSITIVE": "#43b581",
-    "STATUS_WARNING": "#faa61a",
-    "STATUS_DANGER": "#7f007b",
-    "STATUS_STREAMING": "#593695",
-    "STATUS_OFFLINE": "#808080",
-    "BORDER_FAINT": "#FFFFFF12",
-    "BORDER_SUBTLE": "#FFFFFF1c",
-    "BORDER_STRONG": "#FFFFFF26",
-    "CARD_PRIMARY_BG": "#00000040",
-    "CARD_SECONDARY_BG": "#00000059",
-    "ANDROID_RIPPLE": "#4a235a",
-    "KEYBOARD": "#00000075",
-    "SPOILER_HIDDEN_BACKGROUND": "#000000"
+    "CHAT_BACKGROUND": [
+      "transparent"
+    ],
+    "BACKGROUND_PRIMARY": [
+      "transparent"
+    ],
+    "BACKGROUND_SECONDARY": [
+      "#0000008c"
+    ],
+    "BACKGROUND_SECONDARY_ALT": [
+      "#00000075"
+    ],
+    "BACKGROUND_TERTIARY": [
+      "#0000004d"
+    ],
+    "BACKGROUND_FLOATING": [
+      "#00000080"
+    ],
+    "BACKGROUND_NESTED_FLOATING": [
+      "#0000004d"
+    ],
+    "BACKGROUND_MOBILE_PRIMARY": [
+      "transparent"
+    ],
+    "BACKGROUND_MOBILE_SECONDARY": [
+      "#0000008c"
+    ],
+    "BG_BASE_PRIMARY": [
+      "transparent"
+    ],
+    "BG_BASE_SECONDARY": [
+      "#0000008c"
+    ],
+    "BG_BASE_TERTIARY": [
+      "#00000075"
+    ],
+    "HOME_BACKGROUND": [
+      "#00000059"
+    ],
+    "CHANNELTEXTAREA_BACKGROUND": [
+      "#0000008c"
+    ],
+    "REDESIGN_CHAT_INPUT_BACKGROUND": [
+      "#0000008c"
+    ],
+    "BACKGROUND_MESSAGE_HOVER": [
+      "#FFFFFF12"
+    ],
+    "BACKGROUND_MODIFIER_HOVER": [
+      "#FFFFFF0F"
+    ],
+    "BACKGROUND_MODIFIER_ACTIVE": [
+      "#FFFFFF14"
+    ],
+    "BACKGROUND_MODIFIER_SELECTED": [
+      "#FFFFFF1A"
+    ],
+    "BACKGROUND_MODIFIER_ACCENT": [
+      "#FFFFFF12"
+    ],
+    "BACKGROUND_MENTIONED": [
+      "rgba(114,0,0,0.1)"
+    ],
+    "BACKGROUND_MENTIONED_HOVER": [
+      "rgba(170,0,0,0.1)"
+    ],
+    "MENTION_BACKGROUND": [
+      "rgba(114,0,0,0.1)"
+    ],
+    "MENTION_FOREGROUND": [
+      "#8200c8"
+    ],
+    "HEADER_PRIMARY": [
+      "#cbadff"
+    ],
+    "HEADER_SECONDARY": [
+      "#d359ff"
+    ],
+    "TEXT_NORMAL": [
+      "#cbadff"
+    ],
+    "TEXT_SECONDARY": [
+      "#d359ff"
+    ],
+    "TEXT_MUTED": [
+      "#d359ff"
+    ],
+    "TEXT_LINK": [
+      "#8200c8"
+    ],
+    "TEXT_POSITIVE": [
+      "#43b581"
+    ],
+    "TEXT_WARNING": [
+      "#faa61a"
+    ],
+    "TEXT_DANGER": [
+      "#7f007b"
+    ],
+    "CHANNELS_DEFAULT": [
+      "#d359ff"
+    ],
+    "CHANNEL_ICON": [
+      "#d359ff4d"
+    ],
+    "CHANNEL_TEXT_AREA_PLACEHOLDER": [
+      "#d359ff"
+    ],
+    "INTERACTIVE_ACTIVE": [
+      "#8200c8"
+    ],
+    "INTERACTIVE_HOVER": [
+      "#3d007a"
+    ],
+    "INTERACTIVE_NORMAL": [
+      "#cbadff"
+    ],
+    "INTERACTIVE_MUTED": [
+      "#d359ff"
+    ],
+    "SCROLLBAR_AUTO_THUMB": [
+      "#2b2b2b"
+    ],
+    "SCROLLBAR_AUTO_TRACK": [
+      "transparent"
+    ],
+    "SCROLLBAR_THIN_THUMB": [
+      "#2b2b2b"
+    ],
+    "SCROLLBAR_THIN_TRACK": [
+      "transparent"
+    ],
+    "STATUS_POSITIVE": [
+      "#43b581"
+    ],
+    "STATUS_WARNING": [
+      "#faa61a"
+    ],
+    "STATUS_DANGER": [
+      "#7f007b"
+    ],
+    "STATUS_STREAMING": [
+      "#593695"
+    ],
+    "STATUS_OFFLINE": [
+      "#808080"
+    ],
+    "BORDER_FAINT": [
+      "#FFFFFF12"
+    ],
+    "BORDER_SUBTLE": [
+      "#FFFFFF1c"
+    ],
+    "BORDER_STRONG": [
+      "#FFFFFF26"
+    ],
+    "CARD_PRIMARY_BG": [
+      "#00000040"
+    ],
+    "CARD_SECONDARY_BG": [
+      "#00000059"
+    ],
+    "ANDROID_RIPPLE": [
+      "#4a235a"
+    ],
+    "KEYBOARD": [
+      "#00000075"
+    ],
+    "SPOILER_HIDDEN_BACKGROUND": [
+      "#000000"
+    ]
   },
   "rawColors": {
     "BRAND_200": "#8200c8",
@@ -105,11 +219,10 @@
     "PINK_500": "#d359ff",
     "ROLE_DEFAULT": "#d359ff"
   },
-  "background_url": "https://raw.githubusercontent.com/MasterModz1243/themesforvencord/refs/heads/main/wmremove-transformed.png",
   "plus": {
     "version": "0",
     "wallpaper": {
-      "url": "https://raw.githubusercontent.com/MasterModz1243/themesforvencord/refs/heads/main/wmremove-transformed.png",
+      "url": "https://github.com/MasterModz1243/themesforvencord/blob/main/wmremove-transformed.png?raw=true",
       "opacity": 0.25,
       "blur": 6,
       "scale": "cover",
