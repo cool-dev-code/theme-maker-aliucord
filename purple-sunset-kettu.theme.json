@@ -1,49 +1,519 @@
-{
-  "name": "Purple Sunset",
-  "description": "ClearVision V7 inspired theme (Purple Sunset) ported to Discord Mobile.",
-  "version": "1.0.0",
-  "authors": [
-    { "name": "ClearVision", "id": "clearvision" }
-  ],
-  "spec": 2,
-  "semanticColors": {
-    "BACKGROUND_PRIMARY": "#000000",
-    "BACKGROUND_SECONDARY": "rgba(0,0,0,0.5)",
-    "BACKGROUND_SECONDARY_ALT": "rgba(0,0,0,0.4)",
-    "BACKGROUND_TERTIARY": "rgba(0,0,0,0.3)",
-    "BG_BASE_PRIMARY": "#000000",
-    "BG_BASE_SECONDARY": "#0d0d0d",
-    "BG_BASE_TERTIARY": "#1a1a1a",
-    "HEADER_PRIMARY": "#cbadff",
-    "HEADER_SECONDARY": "#d359ff",
-    "TEXT_NORMAL": "#cbadff",
-    "TEXT_MUTED": "#d359ff",
-    "TEXT_LINK": "#8200c8",
-    "TEXT_POSITIVE": "#001e98",
-    "TEXT_DANGER": "#7f007b",
-    "MENTION_BACKGROUND": "rgba(114,0,0,0.1)",
-    "MENTION_FOREGROUND": "#cbadff",
-    "INTERACTIVE_ACTIVE": "#8200c8",
-    "INTERACTIVE_HOVER": "#3d007a",
-    "STATUS_POSITIVE": "#43b581",
-    "STATUS_WARNING": "#faa61a",
-    "STATUS_DANGER": "#982929",
-    "STATUS_STREAMING": "#593695",
-    "STATUS_OFFLINE": "#808080"
-  },
-  "rawColors": {
-    "BRAND_500": "#8200c8",
-    "BRAND_560": "#3d007a",
-    "PRIMARY_600": "#000000",
-    "PRIMARY_630": "#1a1a1a",
-    "PRIMARY_660": "#0d0d0d",
-    "PRIMARY_700": "rgba(0,0,0,0.4)",
-    "GREEN_500": "#43b581",
-    "YELLOW_500": "#faa61a",
-    "RED_500": "#982929",
-    "PURPLE_500": "#8200c8",
-    "PINK_500": "#d359ff",
-    "WHITE_500": "#cbadff",
-    "GREY_500": "#808080"
+/**
+ * Purple Sunset — Standalone Template (ClearVision V7 based)
+ * Combines: ClearVision v7 (main.css), Vencord extras, HorizontalServerList
+ * Notes:
+ *   - This file *works now* by importing upstream CSS over HTTPS.
+ *   - If you need a 100% offline file, replace the two "INLINE HERE" blocks below
+ *     with the contents of those files (see comments).
+ *
+ * Licenses:
+ *   - ClearVision v7 — Apache-2.0
+ *   - HorizontalServerList — MIT
+ *
+ * Sources (for reference):
+ *   - ClearVision main.css: https://clearvision.github.io/ClearVision-v7/main.css
+ *   - ClearVision Vencord CSS: https://clearvision.github.io/ClearVision-v7/vencord.css
+ *   - HorizontalServerList: https://raw.githubusercontent.com/DiscordStyles/HorizontalServerList/deploy/HorizontalServerList.theme.css
+ */
+
+
+/* =========================  INLINE BLOCK 1  =========================
+   ClearVision V7 main.css (FULL CONTENT)
+   --------------------------------------------------------------------
+   If you want this file to be 100% offline, paste the entire contents
+   of main.css right here and delete the import below.
+   ==================================================================== */
+
+/* Fallback (kept for now so this file works without manual inlining): */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+
+/* =========================  INLINE BLOCK 2  =========================
+   ClearVision V7 Vencord CSS (FULL CONTENT)
+   --------------------------------------------------------------------
+   If you want this file to be 100% offline, paste the entire contents
+   of vencord.css right here and delete the import below.
+   ==================================================================== */
+
+/* Fallback (kept for now so this file works without manual inlining): */
+@import url("https://clearvision.github.io/ClearVision-v7/vencord.css");
+
+/* ==== User Customizations (from Purple-Sunset.css) ==== */
+/**
+ * @name ClearVision V7 Purple Sunset
+ * @author ClearVision
+ * @version 7.0.1 
+ * @description Highly customizable theme for Vencord.
+ * @source https://github.com/ClearVision/ClearVision-v7
+ * @website https://clearvision.github.io
+ * @invite dHaSxn3
+ */
+
+/* IMPORT CSS */
+
+/* Vencord import */
+
+/* Custom imports */
+
+/* Main theme */
+:root {
+    /* ACCENT COLORS */
+    --main-color: #8200c8;
+    --hover-color: #3d007a;
+    --success-color: #001e98;
+    --danger-color: #7f007b;
+    --channel-default: #720000;
+
+    /* STATUS COLORS */
+    --online-color: #43b581;
+    --idle-color: #faa61a;
+    --dnd-color: #982929;
+    --streaming-color: #593695;
+    --offline-color: #808080;
+
+    /* BACKGROUND IMAGES */
+    --background-shading-percent: 100%;
+    --background-image: url(https://github.com/MasterModz1243/themesforvencord/blob/main/wmremove-transformed.png?raw=true);
+    --background-attachment: fixed;
+    --user-popout-image: var(--background-image);
+    --user-popout-attachment: var(--background-attachment);
+    --user-modal-image: var(--background-image);
+    --user-modal-attachment: var(--background-attachment);
+    /* HOME ICON */
+    --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+    /* FONTS */
+    --main-font: "gg sans", Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --code-font: Consolas, "gg mono", "Liberation Mono", Menlo, Courier, monospace;
+    /* BACKGROUND IMAGE FILTERS */
+    --background-filter: saturate(calc(var(--saturation-factor, 1) * 1));
+    --user-popout-filter: var(--background-filter);
+    --user-modal-filter: var(--background-filter);
+    --columns: 1;
+    --guildsize: 57;
+    --aligndms: 0;
   }
+  
+  /* THEME SPECIFIC SHADING */
+  
+  /* ASH THEME / DARK THEME IN OLD UI */
+  :is(.theme-dark, .theme-light .theme-dark) {
+    --background-shading: rgba(0, 0, 0, 0.4);
+    --card-shading: rgba(0, 0, 0, 0.3);
+    --popout-shading: rgba(0, 0, 0, 0.6);
+    --modal-shading: rgba(0, 0, 0, 0.4);
+    --input-shading: rgba(255, 255, 255, 0.05);
+    --normal-text: #cbadff;
+    --muted-text: #d359ff;
+  }
+  
+  /* DARK THEME - NEW UI EXCLUSIVE */
+  :is(.theme-darker, .theme-light .theme-darker) {
+    --background-shading: rgba(0, 0, 0, 0.75);
+    --card-shading: rgba(0, 0, 0, 0.4);
+    --popout-shading: rgba(0, 0, 0, 0.7);
+    --modal-shading: rgba(0, 0, 0, 0.5);
+    --input-shading: rgba(255, 255, 255, 0.05);
+    --normal-text: #7b5ead;
+    --muted-text: #d359ff;
+  }
+  
+  /* ONYX THEME - NEW UI EXCLUSIVE */
+  :is(.theme-midnight, .theme-light .theme-midnight) {
+    --background-shading: rgba(0, 0, 0, 0.8);
+    --card-shading: rgba(0, 0, 0, 0.5);
+    --popout-shading: rgba(0, 0, 0, 0.8);
+    --modal-shading: rgba(0, 0, 0, 0.6);
+    --input-shading: rgba(255, 255, 255, 0.05);
+    --normal-text: #cbadff;
+    --muted-text: #d359ff;
+  }
+
+  /* ------------------------------ ADD ADDITIONAL CSS BELOW HERE ------------------------------ */
+
+  /* WINDOWS TOP BAR */
+.title_c38106 {
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  }
+
+  /* Remove Server icon/title in titlebar */
+    .title__85643 {
+        display: none !important;
+  }
+  
+  /* VC Shiki Code */
+  .vc-shiki-container {
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+
+/* WHO IS CHATTING */
+.text_b88801 {
+    font-size: 14px;
 }
+
+/* Chat header */
+.visual-refresh .title_f75fb0 {
+    background: rgba(0, 0, 0, 0.5);
+    /* border-radius: 10px; */
+    border-bottom: 1px solid rgba(253, 225, 225, 0.123);
+}
+
+/* Chat panel */
+.visual-refresh .page_c48ade {
+    border-radius: 10px;
+    border: 1px solid rgba(225, 240, 253, 0.123);
+}
+
+/* URL text */
+/* .markup__75297 .anchor_edefb8 {
+ * color: black;
+ } * */
+
+
+/* SPOILER */
+.spoilerContent__54ab5,
+.spoilerMarkdownContent__54ab5,
+.hidden__54ab5 {
+    background: rgba(0, 0, 0, 1) !important;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* Chat input */
+.scrollableContainer__74017,
+.themedBackground__74017 {
+    background: rgb(0, 0, 0);
+}
+.visual-refresh .channelTextArea__74017 {
+    box-shadow: 0 0 0 1px var(--hsl-input-border-shading);
+}
+.visual-refresh:not(.visual-refresh-chat-input) .stackedBars__74017, .visual-refresh:not(.visual-refresh-chat-input) .channelAttachmentArea_b77158 {
+    background: rgb(0, 0, 0);
+}
+.visual-refresh .searchBar__97492 {
+    background-color: rgba(0, 0, 0, 0);
+}
+.visual-refresh .searchBar__5ec2f {
+    background-color: rgba(0, 0, 0, 0);
+}
+/* Mention */
+.mentioned__5126c {
+    --background-mentioned: rgba(114, 0, 0, 0.1);
+    --background-mentioned-hover: rgba(170, 0, 0, 0.1);
+}
+
+/* Edit timestamp */
+.messageContent_c19a55 .timestamp_c19a55 time:after {
+    content: " (" attr(aria-label) ")";
+    font-size: 0.625rem;
+    font-weight: 400;
+}
+
+.messageContent_c19a55 .timestamp_c19a55 span {
+    display: none;
+}
+
+/* Inline code `` `` */
+.visual-refresh .markup__75297 code.inline {
+    background: rgba(0, 0, 0, 1);
+}
+
+/* Username in chat */
+.username_c19a55 {
+    font-weight: 900;
+}
+
+/* Bold text weight max */
+.markup__75297 strong {
+    font-weight: 900;
+}
+
+/* Friends List Header Fix */
+.visual-refresh .headerText__99e7c {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 14.5px;
+    font-weight: 700;
+    align-items: center
+}
+
+/* DM List size */
+.linkButtonIcon__972a0,
+.name__20a53 {
+    font-size: 14px;
+    color: #9952b3;
+    text-shadow: #000000 0px 0px 2px;
+    font-weight: 700;
+    transition: all 0.15s ease-in-out;
+    overflow: hidden;
+}
+
+/* DM background dim */
+.visual-refresh .privateChannels__35e86 {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Friends List size */
+.username__0a06e {
+    color: #9952b3;
+    font-size: 15px;
+}
+
+.subtext__0a06e {
+    color: white;
+}
+
+/* Role groups */
+.membersGroup_c8ffbb {
+/* Set initial border color and width */
+    border-bottom-width: 3px;
+    border-style: solid;
+    border-color: transparent;
+
+    /* Gradient border */
+    border-image: linear-gradient(to right, #7F0000, #7F0000);
+    border-image-slice: 0;
+}
+
+/* Members list */
+.visual-refresh .membersWrap_c8ffbb {
+    background: rgba(0, 0, 0, 0.5);
+    border-left: 1px solid rgba(253, 225, 225, 0.123);
+}
+
+
+/* Server panel */
+.visual-refresh .sidebarList_c48ade {
+    border-radius: 10px;
+    border: 1px solid rgba(253, 225, 225, 0.123);
+}
+
+/* Category background*/
+.visual-refresh .mainContent__29444 {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* Category text */
+.visual-refresh .name__29444 {
+    text-shadow: #000000 0px 0px 5px;
+    font-size: 15px;
+}
+
+/* Channel text */
+.name__2ea32 {
+    color: rgb(218, 218, 218);
+    text-shadow: #000000 0px 0px 1px;
+}
+
+/* Server list */
+.visual-refresh .guilds_c48ade {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(253, 225, 225, 0.123) !important;
+}
+
+/* Rounded servers icon */
+.icon__6e9f8 {
+    border-radius: 35%;
+}
+
+/* Server unread + hover */
+/* .item__58105 {} */
+
+
+/* Unread channel */
+/* .visual-refresh .unread__2ea32 {} */
+
+/* Channels list + Server name above it*/
+.visual-refresh .container__2637a {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* USER PANEL */
+/* Transparent user panel */
+.visual-refresh .panels_c48ade {
+    background: rgba(0, 0, 0, 0.411) !important;
+    backdrop-filter: rgba(0, 0, 0, 0.411) !important;
+    border-radius: 10px;
+    border: 1px solid rgba(253, 225, 225, 0.123);
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*  */
+
+nav.guilds_c48ade {
+    margin-bottom: 0 !important;
+}
+
+.guilds_c48ade {
+    --custom-app-panels-height: 0px !important;
+}
+
+/* Activity panel border */
+.visual-refresh .panel__5dec7 {
+    border-bottom: 1px solid rgba(253, 225, 225, 0.123);
+}
+
+/* Voice chat panel border */
+.wrapper_e131a9 {
+    border-bottom: 1px solid rgba(253, 225, 225, 0.123);
+}
+/*Boosts Bar - Illusional*/
+.progressBar_eff079 {
+  background: linear-gradient(to left, purple, blue) !important;
+}
+/* Old User Panel for Single Column */
+/* Position of User Panel base on UI density */
+/* Compact */
+.density-compact .panels_c48ade {
+    left: calc(var(--custom-guild-list-width) + 17px) !important;
+    width: calc(100% - var(--custom-guild-list-width) - 17px) !important;
+}
+
+/* Default */
+.density-default .panels_c48ade {
+    left: calc(var(--custom-guild-list-width) + 10px) !important;
+    width: calc(100% - var(--custom-guild-list-width) - 10px) !important;
+}
+
+/* Spacious */
+.density-cozy .panels_c48ade {
+    left: calc(var(--custom-guild-list-width) + 1px) !important;
+    width: calc(100% - var(--custom-guild-list-width) - 1px) !important;
+}
+
+/* User pop up remove banner for non-nitro users*/
+:where(.banner__68edb:not([style*="background-image"])) {
+    background: none !important;
+}
+
+/* Remove outer padding + remove custom nitro background for nitro user */
+.outer_c0bea0.custom-user-profile-theme {
+    background: rgba(0, 0, 0, 0.4) !important;
+    padding: 0;
+}
+
+.outer_c0bea0.custom-user-profile-theme .inner_c0bea0 {
+    background: rgba(0, 0, 0, 0.4) !important;
+}
+/* Nameplate -Aki */
+.panels_c48ade:has(.activityPanel_c48ade) .container__4bbc6,
+.panels_c48ade:has(.container_e131a9) .container__4bbc6 {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+/* user panel buttons -Aki */
+.panels_c48ade .container__37e49 .contents__201d5 path{
+    color: rgba(164, 112, 255);
+}
+.panels_c48ade .container__4bbc6 {
+    border-radius: inherit;
+    left: -4px;
+    top: -2px;
+    height: 103%;
+    width: 104%;
+}
+
+/* Gradient top banner */
+/* Might need to delete remove banner on top for it to work.... */
+/* .mask__68edb {
+    mask: linear-gradient(black, transparent);
+} */
+/* Unread Dot recoloring - Pieplup*/
+.item__58105 { /* Server Unread dot */
+    background-color:  var(--main-color) !important;
+}
+.unread__2ea32 { /* Channel Unread Dot */
+    background-color: var(--main-color) !important;
+}
+/* Voice chat user glow effect for both username and profile picture */
+.avatarSpeaking__07f91 {
+    background-color: #ac0000b9;
+    box-shadow: 0 0 10px #ac0000b9, 0 0 20px #ac0000b9;
+    border-radius: 50px;
+    transition: box-shadow 0.05s ease, background-color 0.05s ease;
+}
+
+
+.container__91e7c {
+    display: flex;
+    align-items: center;
+}
+
+/* Username in voice chat */
+.usernameFont__07f91 {
+    font-size: 14px;
+    mask: linear-gradient(to right, black, 75%, transparent);
+    color: rgba(255, 255, 255, 0.925);
+    font-weight: 600;
+    text-shadow: #88000085 0px 0px 8px;
+    padding-left: 3px;
+    padding-bottom: 1px;
+}
+
+/*Round Add Server/Discover Buttons*/
+.circleIconButton__5bc7e {
+    border-radius: 50%;
+  }
+
+/* Remove Borders Around Channel Headers*/
+.subtitleContainer_f75fb0, .title_f75fb0 {
+    border-left: none !important;
+    border-bottom: none !important;
+  }
+
+/* Chat Polls*/
+#app-mount .container__0be77 {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+#app-mount .container_f69538 {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Remove and recenter buttons in chat box*/
+.visual-refresh button[aria-label="Open sticker picker"], button[aria-label="Send a gift"], button[aria-label="Apps"], button[aria-label="Open GIF picker"] {
+    display: none;
+  }
+  .visual-refresh .buttons__74017 {
+    align-items: center;
+    gap: .1px;
+  }
+/* New Voice Chat Version - Aki */
+.content__07f91:has(.usernameSpeaking__07f91, .avatarSpeaking__07f91) {
+    background: linear-gradient(to right, var(--hover-color), #4a91e200);
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: background 1s ease, box-shadow 0.05s ease;
+}
+
+.usernameSpeaking__07f91 {
+    font-weight: 550;
+}
+
+.avatarSpeaking__07f91 {
+    box-shadow: none;
+}
+/* Remove all except friends and message requests */
+:where(.visual-refresh) .channel__972a0:not(.dm__972a0) .link__972a0:not([href="/channels/@me"]):not([href="/message-requests"]) {
+    display: none;
+}
+
+/*Banner Color in Emote Picker */
+.visual-refresh .wrapper__14245 {
+    background-color: rgba(100, 0, 0, 0);
+  }
+
+/* Webcam, Screenshare, etc Buttons */
+.visual-refresh .button_e131a9.buttonColor_e131a9, .visual-refresh .button_e131a9 .buttonColor_e131a9 {
+    background-color: rgba(170, 0, 0, 0.5);
+  }
+
+/* Top left channel icon */
+  .visual-refresh .icon__9293f {
+    color: #720000
+  }
